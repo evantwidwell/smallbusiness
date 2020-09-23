@@ -1,6 +1,6 @@
 export default {
   
-  user: {},
+  user: [],
   listings: [
     {
       id: 1,

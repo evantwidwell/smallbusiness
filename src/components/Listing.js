@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Paper, Chip } from '@material-ui/core';
 
+
 const Listing = (props) => {
     const id = props.match.params.id
     const l1 = props.listings.find(c => c.id == id)

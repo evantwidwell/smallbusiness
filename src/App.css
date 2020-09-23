@@ -27,7 +27,12 @@
 .App-link {
   color: #61dafb;
 }
-
+.car-container {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

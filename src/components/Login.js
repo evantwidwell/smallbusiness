@@ -24,7 +24,7 @@ class Login extends Component {
     console.log(this.props);
     this.props.setUser(payload);
     console.log(this.props.user)
-    // window.location.replace("/");
+    window.location.replace("/");
   };
   //   handleSubmit = (e) => {
   //     e.preventDefault()
