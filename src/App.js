@@ -10,12 +10,12 @@ import store from './redux/store'
 function App() {
   return (
     
-    // <Provider store={store}>
+    <Provider store={store}>
       <BrowserRouter>
         <Navigation />
-         {/* <Router /> */}
+         <Router />
        </BrowserRouter>
-    // </Provider>
+    </Provider> 
   );
 }
 
