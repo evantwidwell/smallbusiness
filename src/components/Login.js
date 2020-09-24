@@ -1,12 +1,12 @@
-import React from 'react'
-import  { Component } from 'react'
-import { TextField, Button, Container } from "@material-ui/core"
+import React from "react";
+import { Component } from "react";
+import { TextField, Button, Container } from "@material-ui/core";
 
 class Login extends Component {
   state = {
-    username: '',
-    password: '',
-  }
+    username: "",
+    password: "",
+  };
 
   handleTextChange = (e) => {
     const state = { ...this.state };
@@ -23,20 +23,9 @@ class Login extends Component {
     console.log("THE USER", payload);
     console.log(this.props);
     this.props.setUser(payload);
-    console.log(this.props.user)
+    console.log(this.props.user);
     window.location.replace("/");
   };
-  //   handleSubmit = (e) => {
-  //     e.preventDefault()
-  //     const payload = { ...this.state }
-  //     payload.id = this.props.carTotal + 1
-  //     delete payload.open
-  //     console.log("THE User", payload)
-  //     // add this.props.addCar function here
-  //     this.props.setUser(payload)
-  //     // also add this.setState to close the dialog
-  //     this.setState({ open: false })
-  // }
 
   render() {
     return (
@@ -73,8 +62,8 @@ class Login extends Component {
           </form>
         </Container>
       </div>
-    )
+    );
   }
 }
 
-export default Login
+export default Login;

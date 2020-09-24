@@ -9,8 +9,10 @@ import {
 } from '@material-ui/core'
 import DeleteIcon from '@material-ui/icons/Delete'
 import { Link } from 'react-router-dom'
+import '../App.css'
  
 const Dashboard = (props) => {
+    
     console.log(document.cookie);
     console.log(props)
     if(document.cookie){

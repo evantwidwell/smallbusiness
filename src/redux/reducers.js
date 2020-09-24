@@ -5,10 +5,8 @@ const user = (state = [], action) => {
         case 'SET_USER':
             console.log( action.type)
             console.log( action.value)
-            const newState = [...state, action.value]
-            console.log(newState)
-            return newState
-        default: return state
+           return action.value
+        default: return null
 }}
 
 const listings = (state = [], action) => {
