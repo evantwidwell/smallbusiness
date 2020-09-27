@@ -1,32 +1,63 @@
-import React from 'react'
-import { AppBar, Toolbar, IconButton, 
-    Typography } from '@material-ui/core'
-import MenuIcon from '@material-ui/icons/Menu'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { AppBar, Toolbar, IconButton, Typography } from "@material-ui/core";
+import MenuIcon from "@material-ui/icons/Menu";
+import { makeStyles, withTheme } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
+  },
+}));
 
 const Navigation = () => {
-    return (
-        <AppBar position="relative">
-            <Toolbar>
-                <IconButton color="inherit">
-                    <MenuIcon />
-                </IconButton>
-                <Typography variant="h6" style={{ flexGrow: "1" }}>
-                    Austin Small Business
-                </Typography>
-                <ul className="nav-list">
- 
-                    <li className="nav-list-item">
-                        <Link to="/listings">Listings</Link>
-                    </li>
-                    <li className="nav-list-item">
-                        <Link to="/login">Login</Link>
-                    </li>
-                    
-                </ul>
-            </Toolbar>
-        </AppBar>
+  const classes = useStyles();
+  if(document.cookie){
+  return (
+    <div className={classes.root}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton color="inherit">
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" style={{ flexGrow: "1" }}>
+            Austin Small Business
+          </Typography>
+          <ul className="nav-list">
+            <Button color="inherit" href="/">Listings</Button>
+            <Button color="inherit" href="/login">Login</Button>
+            <Button color="inherit" href="/addlisting">Add Listing</Button>
+          </ul>
+        </Toolbar>
+      </AppBar>
+    </div>
+  );} else {
+    return(
+      <div className={classes.root}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton color="inherit">
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" style={{ flexGrow: "1" }}>
+            Austin Small Business
+          </Typography>
+          <ul className="nav-list">
+            <Button color="inherit" href="/">Listings</Button>
+            <Button color="inherit" href="/login">Login</Button>
+          </ul>
+        </Toolbar>
+      </AppBar>
+    </div>
     )
-}
+  }
+};
 
-export default Navigation
+export default Navigation;

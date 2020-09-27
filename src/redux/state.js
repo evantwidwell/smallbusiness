@@ -1,42 +1,39 @@
 export default {
-  makes: [],
-  user: {
-    username: "test-user",
-    email: "test-user@example.com",
-  },
+  
+  user: [],
   listings: [
     {
       id: 1,
       name: "Epoch Coffee",
       description: "Cool Local Coffee Shop",
-      address: "",
-      hours: ""
+      address: "221 W North Loop Blvd",
+      hours: "7AM-7PM"
     },
     {
       id: 2,
-      name: "Epoch Coffee",
-      description: "Cool Local Coffee Shop",
-      address: "",
-      hours: ""
+      name: "Merit Coffee",
+      description: "Upscale yuppyish coffee shop",
+      address: "1105 South Lamar Blvd",
+      hours: "7AM-10PM"
     },
     {
       id: 3,
-      name: "Epoch Coffee",
-      description: "Cool Local Coffee Shop",
-      address: "",
-      hours: ""
+      name: "Starbucks Coffee",
+      description: "Coffee for jerks",
+      address: "3317 Northland Dr ste a, Austin, TX 78731",
+      hours: "4:30AM–8:30PM"
     },
     {
       id: 4,
-      name: "Epoch Coffee",
+      name: "Bennu Coffee",
       description: "Cool Local Coffee Shop",
       address: "",
-      hours: ""
+      hours: "24 Hours"
     },
     {
       id: 5,
-      name: "Epoch Coffee",
-      description: "Cool Local Coffee Shop",
+      name: "Houndstooth Coffee",
+      description: "High End Shop, Selling Well-Crafted Drinks",
       address: "",
       hours: ""
     },
